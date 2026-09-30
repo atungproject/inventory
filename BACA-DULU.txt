@@ -1,0 +1,32 @@
+TRIO INVENTORY CONTROL -- PAKET SHARED HOSTING (CodeIgniter 4 + SQLite)
+======================================================================
+
+ISI PAKET
+  public_html/   Aplikasi web (index.html, index.php CI4, css, js, lib, assets)
+  app/           Kode aplikasi (di luar docroot, tidak terekspos web)
+  system/        Framework CodeIgniter 4
+  writable/      Log & cache (harus bisa ditulis oleh hosting)
+  data/          Database SQLite -- dibuat otomatis pada kunjungan pertama
+  uploads/       Foto/dokumen -- di luar docroot, disajikan lewat /uploads/
+  .env           Konfigurasi (mode produksi, domain, zona waktu)
+  router.php     Router untuk php -S / VPS / Docker (tidak dipakai di cPanel)
+  BACA-DULU.txt  Berkas ini
+
+LANGKAH PEMASANGAN (cPanel Domainesia)
+1. cPanel > File Manager > masuk ke direktori HOME (induk public_html).
+2. Upload trio-hosting.zip lalu Extract di direktori itu; konfirmasi timpa
+   bila diminta. Hasil: /home/ANDA/public_html/index.html dan
+   /home/ANDA/app, /home/ANDA/system, dst.
+3. cPanel > MultiPHP Manager: pilih PHP 8.2 atau 8.3 untuk domain Anda.
+   Pastikan ekstensi sqlite3 & pdo_sqlite aktif (Select PHP Version).
+4. Pasang SSL: cPanel > SSL/TLS Status > Run AutoSSL / Let's Encrypt.
+   WAJIB untuk pemindaian QR Stock Opname (kamera hanya jalan di https:// atau localhost).
+5. Edit /home/ANDA/.env -> ganti app.baseURL dengan domain Anda, misal:
+      app.baseURL = 'https://tokoanda.example/'
+6. Buka https://domainANDA/ lalu login: admin/admin123, auditor/audit123,
+   cabang/cabang123. SEGERA ganti password lewat menu User & Akses, lalu
+   sesuaikan role & izin lewat menu Hak Akses.
+
+MASALAH UMUM? Lihat DEPLOY.md bagian "Jalur C" (troubleshooting: ubah
+CI_ENVIRONMENT=development di .env, izin folder writable, versi PHP,
+dan log di writable/logs/).

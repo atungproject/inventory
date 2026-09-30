@@ -1,0 +1,33 @@
+TRIO INVENTORY CONTROL -- CARA MENJALANKAN DI PC / SERVER
+=========================================================
+
+ISI FOLDER INI
+  jalankan.bat     Jalankan server (Windows) -> http://localhost:8123
+  router.php       Router PHP built-in server (untuk php -S / VPS / Docker)
+  public_html/     Aplikasi web (index.html, index.php CI4, css, js, lib, assets)
+  app/ system/     Kerangka CodeIgniter 4 (di LUAR docroot)
+  data/trio.db     Database SQLite siap pakai (master + 3 akun demo)
+  uploads/         Foto & dokumen (di luar docroot)
+  .env             Konfigurasi (baseURL, zona waktu)
+  BACA-DULU.txt    Langkah pemasangan shared hosting (cPanel)
+
+MENJALANKAN
+  Windows : jalankan.bat
+  Linux   : php -S 0.0.0.0:8123 router.php
+  Akses LAN dari HP: http://IP-KOMPUTER-ANDA:8123 (cek dengan ipconfig)
+  Syarat: PHP 8.2+ dengan ekstensi sqlite3 (php -m | findstr sqlite3)
+
+LOGIN (segera ganti password setelah masuk)
+  admin / admin123     Administrator
+  auditor / audit123   Auditor
+  cabang / cabang123   Manajemen Cabang (TM Buntok)
+
+MENU BARU VERSI INI
+  Hak Akses     kelola role + matriks izin per modul (khusus Administrator)
+  Master Data   Master Cabang (ruang inventaris + prefix kode) & Master PIC per cabang
+
+CATATAN
+  - Kamera QR hanya jalan di https:// atau localhost -> untuk pemindaian dari HP
+    gunakan HTTPS (lihat BACA-DULU.txt / DEPLOY.md).
+  - Backup: salin folder data/ + uploads/ (atau menu Pengaturan -> Backup).
+  - Deploy shared hosting: ikuti BACA-DULU.txt (paket dist/trio-hosting.zip).
