@@ -1,0 +1,301 @@
+CRITICAL - 2026-09-24 15:04:36 --> Error: Class "CodeIgniter\Filters\Filter" not found
+[Method: GET, Route: api/auth/me]
+in APPPATH\Filters\AuthFilter.php on line 20.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(340): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\app\\Filters\\AuthFilter.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\AuthFilter')
+ 4 SYSTEMPATH\Filters\Filters.php(299): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\AuthFilter')
+ 5 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Filters\\AuthFilter')
+ 6 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 7 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('api/auth/me', 'before')
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 C:\Users\fransiskus.jonathan\Documents\Default Project\router.php(80): require('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\public\\index.php')
+CRITICAL - 2026-09-24 15:04:36 --> Error: Class "CodeIgniter\Filters\Filter" not found
+[Method: GET, Route: api/db]
+in APPPATH\Filters\AuthFilter.php on line 20.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(340): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\app\\Filters\\AuthFilter.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\AuthFilter')
+ 4 SYSTEMPATH\Filters\Filters.php(299): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\AuthFilter')
+ 5 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Filters\\AuthFilter')
+ 6 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 7 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('api/db', 'before')
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 C:\Users\fransiskus.jonathan\Documents\Default Project\router.php(80): require('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\public\\index.php')
+CRITICAL - 2026-09-24 15:04:36 --> Error: Class "CodeIgniter\Filters\Filter" not found
+[Method: POST, Route: api/auth/login]
+in APPPATH\Filters\AuthFilter.php on line 20.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(340): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\app\\Filters\\AuthFilter.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\AuthFilter')
+ 4 SYSTEMPATH\Filters\Filters.php(299): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\AuthFilter')
+ 5 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Filters\\AuthFilter')
+ 6 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 7 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('api/auth/login', 'before')
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 C:\Users\fransiskus.jonathan\Documents\Default Project\router.php(80): require('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\public\\index.php')
+CRITICAL - 2026-09-24 15:04:36 --> Error: Class "CodeIgniter\Filters\Filter" not found
+[Method: POST, Route: api/auth/login]
+in APPPATH\Filters\AuthFilter.php on line 20.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(340): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\app\\Filters\\AuthFilter.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\AuthFilter')
+ 4 SYSTEMPATH\Filters\Filters.php(299): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\AuthFilter')
+ 5 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Filters\\AuthFilter')
+ 6 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 7 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('api/auth/login', 'before')
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 C:\Users\fransiskus.jonathan\Documents\Default Project\router.php(80): require('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\public\\index.php')
+CRITICAL - 2026-09-24 15:04:36 --> Error: Class "CodeIgniter\Filters\Filter" not found
+[Method: GET, Route: api/db]
+in APPPATH\Filters\AuthFilter.php on line 20.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(340): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\app\\Filters\\AuthFilter.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\AuthFilter')
+ 4 SYSTEMPATH\Filters\Filters.php(299): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\AuthFilter')
+ 5 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Filters\\AuthFilter')
+ 6 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 7 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('api/db', 'before')
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 C:\Users\fransiskus.jonathan\Documents\Default Project\router.php(80): require('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\public\\index.php')
+CRITICAL - 2026-09-24 15:04:36 --> Error: Class "CodeIgniter\Filters\Filter" not found
+[Method: POST, Route: api/assets]
+in APPPATH\Filters\AuthFilter.php on line 20.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(340): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\app\\Filters\\AuthFilter.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\AuthFilter')
+ 4 SYSTEMPATH\Filters\Filters.php(299): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\AuthFilter')
+ 5 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Filters\\AuthFilter')
+ 6 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 7 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('api/assets', 'before')
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 C:\Users\fransiskus.jonathan\Documents\Default Project\router.php(80): require('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\public\\index.php')
+CRITICAL - 2026-09-24 15:04:36 --> Error: Class "CodeIgniter\Filters\Filter" not found
+[Method: GET, Route: api/db]
+in APPPATH\Filters\AuthFilter.php on line 20.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(340): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\app\\Filters\\AuthFilter.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\AuthFilter')
+ 4 SYSTEMPATH\Filters\Filters.php(299): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\AuthFilter')
+ 5 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Filters\\AuthFilter')
+ 6 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 7 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('api/db', 'before')
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 C:\Users\fransiskus.jonathan\Documents\Default Project\router.php(80): require('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\public\\index.php')
+CRITICAL - 2026-09-24 15:13:25 --> Error: Class "CodeIgniter\Filters\Filter" not found
+[Method: GET, Route: api/auth/me]
+in APPPATH\Filters\AuthFilter.php on line 20.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(340): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\app\\Filters\\AuthFilter.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\AuthFilter')
+ 4 SYSTEMPATH\Filters\Filters.php(299): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\AuthFilter')
+ 5 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Filters\\AuthFilter')
+ 6 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 7 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('api/auth/me', 'before')
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 C:\Users\fransiskus.jonathan\Documents\Default Project\router.php(80): require('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\public\\index.php')
+CRITICAL - 2026-09-24 15:13:25 --> Error: Class "CodeIgniter\Filters\Filter" not found
+[Method: GET, Route: api/db]
+in APPPATH\Filters\AuthFilter.php on line 20.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(340): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\app\\Filters\\AuthFilter.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\AuthFilter')
+ 4 SYSTEMPATH\Filters\Filters.php(299): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\AuthFilter')
+ 5 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Filters\\AuthFilter')
+ 6 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 7 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('api/db', 'before')
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 C:\Users\fransiskus.jonathan\Documents\Default Project\router.php(80): require('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\public\\index.php')
+CRITICAL - 2026-09-24 15:13:25 --> Error: Class "CodeIgniter\Filters\Filter" not found
+[Method: POST, Route: api/auth/login]
+in APPPATH\Filters\AuthFilter.php on line 20.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(340): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\app\\Filters\\AuthFilter.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\AuthFilter')
+ 4 SYSTEMPATH\Filters\Filters.php(299): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\AuthFilter')
+ 5 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Filters\\AuthFilter')
+ 6 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 7 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('api/auth/login', 'before')
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 C:\Users\fransiskus.jonathan\Documents\Default Project\router.php(80): require('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\public\\index.php')
+CRITICAL - 2026-09-24 15:13:25 --> Error: Class "CodeIgniter\Filters\Filter" not found
+[Method: POST, Route: api/auth/login]
+in APPPATH\Filters\AuthFilter.php on line 20.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(340): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\app\\Filters\\AuthFilter.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\AuthFilter')
+ 4 SYSTEMPATH\Filters\Filters.php(299): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\AuthFilter')
+ 5 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Filters\\AuthFilter')
+ 6 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 7 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('api/auth/login', 'before')
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 C:\Users\fransiskus.jonathan\Documents\Default Project\router.php(80): require('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\public\\index.php')
+CRITICAL - 2026-09-24 15:13:25 --> Error: Class "CodeIgniter\Filters\Filter" not found
+[Method: GET, Route: api/db]
+in APPPATH\Filters\AuthFilter.php on line 20.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(340): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\app\\Filters\\AuthFilter.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\AuthFilter')
+ 4 SYSTEMPATH\Filters\Filters.php(299): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\AuthFilter')
+ 5 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Filters\\AuthFilter')
+ 6 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 7 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('api/db', 'before')
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 C:\Users\fransiskus.jonathan\Documents\Default Project\router.php(80): require('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\public\\index.php')
+CRITICAL - 2026-09-24 15:13:25 --> Error: Class "CodeIgniter\Filters\Filter" not found
+[Method: POST, Route: api/assets]
+in APPPATH\Filters\AuthFilter.php on line 20.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(340): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\app\\Filters\\AuthFilter.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\AuthFilter')
+ 4 SYSTEMPATH\Filters\Filters.php(299): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\AuthFilter')
+ 5 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Filters\\AuthFilter')
+ 6 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 7 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('api/assets', 'before')
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 C:\Users\fransiskus.jonathan\Documents\Default Project\router.php(80): require('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\public\\index.php')
+CRITICAL - 2026-09-24 15:13:25 --> Error: Class "CodeIgniter\Filters\Filter" not found
+[Method: GET, Route: api/db]
+in APPPATH\Filters\AuthFilter.php on line 20.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(340): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(320): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\app\\Filters\\AuthFilter.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\AuthFilter')
+ 4 SYSTEMPATH\Filters\Filters.php(299): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\AuthFilter')
+ 5 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Filters\\AuthFilter')
+ 6 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 7 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('api/db', 'before')
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 C:\Users\fransiskus.jonathan\Documents\Default Project\router.php(80): require('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\public\\index.php')
+CRITICAL - 2026-09-24 15:16:48 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: api/auth/me]
+in APPPATH\Libraries\Trio.php on line 357.
+ 1 APPPATH\Libraries\Trio.php(299): App\Libraries\Trio::ensureSeedUsers(Object(CodeIgniter\Database\SQLite3\Connection))
+ 2 APPPATH\Filters\AuthFilter.php(37): App\Libraries\Trio::ensureInit()
+ 3 SYSTEMPATH\Filters\Filters.php(241): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('api/auth/me', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 C:\Users\fransiskus.jonathan\Documents\Default Project\router.php(80): require('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\public\\index.php')
+CRITICAL - 2026-09-24 15:16:49 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: api/db]
+in APPPATH\Libraries\Trio.php on line 357.
+ 1 APPPATH\Libraries\Trio.php(299): App\Libraries\Trio::ensureSeedUsers(Object(CodeIgniter\Database\SQLite3\Connection))
+ 2 APPPATH\Filters\AuthFilter.php(37): App\Libraries\Trio::ensureInit()
+ 3 SYSTEMPATH\Filters\Filters.php(241): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('api/db', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 C:\Users\fransiskus.jonathan\Documents\Default Project\router.php(80): require('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\public\\index.php')
+CRITICAL - 2026-09-24 15:16:49 --> Error: Cannot use object of type stdClass as array
+[Method: POST, Route: api/auth/login]
+in APPPATH\Libraries\Trio.php on line 357.
+ 1 APPPATH\Libraries\Trio.php(299): App\Libraries\Trio::ensureSeedUsers(Object(CodeIgniter\Database\SQLite3\Connection))
+ 2 APPPATH\Filters\AuthFilter.php(37): App\Libraries\Trio::ensureInit()
+ 3 SYSTEMPATH\Filters\Filters.php(241): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('api/auth/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 C:\Users\fransiskus.jonathan\Documents\Default Project\router.php(80): require('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\public\\index.php')
+CRITICAL - 2026-09-24 15:16:49 --> Error: Cannot use object of type stdClass as array
+[Method: POST, Route: api/auth/login]
+in APPPATH\Libraries\Trio.php on line 357.
+ 1 APPPATH\Libraries\Trio.php(299): App\Libraries\Trio::ensureSeedUsers(Object(CodeIgniter\Database\SQLite3\Connection))
+ 2 APPPATH\Filters\AuthFilter.php(37): App\Libraries\Trio::ensureInit()
+ 3 SYSTEMPATH\Filters\Filters.php(241): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('api/auth/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 C:\Users\fransiskus.jonathan\Documents\Default Project\router.php(80): require('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\public\\index.php')
+CRITICAL - 2026-09-24 15:16:49 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: api/db]
+in APPPATH\Libraries\Trio.php on line 357.
+ 1 APPPATH\Libraries\Trio.php(299): App\Libraries\Trio::ensureSeedUsers(Object(CodeIgniter\Database\SQLite3\Connection))
+ 2 APPPATH\Filters\AuthFilter.php(37): App\Libraries\Trio::ensureInit()
+ 3 SYSTEMPATH\Filters\Filters.php(241): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('api/db', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 C:\Users\fransiskus.jonathan\Documents\Default Project\router.php(80): require('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\public\\index.php')
+CRITICAL - 2026-09-24 15:16:49 --> Error: Cannot use object of type stdClass as array
+[Method: POST, Route: api/assets]
+in APPPATH\Libraries\Trio.php on line 357.
+ 1 APPPATH\Libraries\Trio.php(299): App\Libraries\Trio::ensureSeedUsers(Object(CodeIgniter\Database\SQLite3\Connection))
+ 2 APPPATH\Filters\AuthFilter.php(37): App\Libraries\Trio::ensureInit()
+ 3 SYSTEMPATH\Filters\Filters.php(241): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('api/assets', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 C:\Users\fransiskus.jonathan\Documents\Default Project\router.php(80): require('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\public\\index.php')
+CRITICAL - 2026-09-24 15:16:49 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: api/db]
+in APPPATH\Libraries\Trio.php on line 357.
+ 1 APPPATH\Libraries\Trio.php(299): App\Libraries\Trio::ensureSeedUsers(Object(CodeIgniter\Database\SQLite3\Connection))
+ 2 APPPATH\Filters\AuthFilter.php(37): App\Libraries\Trio::ensureInit()
+ 3 SYSTEMPATH\Filters\Filters.php(241): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\Filters\Filters->run('api/db', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 C:\Users\fransiskus.jonathan\Documents\Default Project\router.php(80): require('C:\\Users\\fransiskus.jonathan\\Documents\\Default Project\\php\\public\\index.php')

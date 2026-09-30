@@ -1,0 +1,7 @@
+# Caddyfile — ganti domain di bawah dengan domain Anda.
+# Caddy otomatis mengambil sertifikat HTTPS (Let's Encrypt) begitu domain
+# tercatat menunjuk ke IP server ini, lalu meneruskan ke aplikasi TRIO.
+
+trio.contohanda.com {
+	reverse_proxy 127.0.0.1:8000
+}

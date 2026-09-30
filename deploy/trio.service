@@ -1,0 +1,17 @@
+[Unit]
+Description=TRIO Inventory Control (backend Python)
+After=network.target
+
+[Service]
+Type=simple
+User=trio
+WorkingDirectory=/opt/trio
+ExecStart=/usr/bin/python3 /opt/trio/server.py --host 127.0.0.1 --port 8000
+Restart=always
+RestartSec=3
+# keamanan minimal
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

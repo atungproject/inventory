@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TRIO Inventory Control - Sistem pengendalian inventaris aset TRIO MOTOR. Aset Terjaga, Operasional Lebih Baik.">
+  <title>TRIO Inventory Control</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css?v=2.5">
+</head>
+<body class="login-mode">
+  <div class="app">
+    <!-- ============ SIDEBAR ============ -->
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <span class="brand-mark">
+          <svg viewBox="0 0 32 32" width="22" height="22" aria-hidden="true">
+            <path d="M4 6 L18 6 L12 14 L2 14 Z" fill="#fff"/>
+            <path d="M10 17 L30 17 L24 25 L4 25 Z" fill="#fff" opacity=".9"/>
+          </svg>
+        </span>
+        <span class="brand-text">TRIO INVENTORY</span>
+      </div>
+
+      <nav class="nav" id="nav">
+        <a class="nav-item" href="#/dashboard" data-route="dashboard"><i class="fa-solid fa-gauge-high"></i><span>Dashboard</span></a>
+        <a class="nav-item" href="#/inventaris" data-route="inventaris"><i class="fa-solid fa-boxes-stacked"></i><span>Inventaris</span></a>
+        <a class="nav-item" href="#/transaksi" data-route="transaksi" data-perm="mutation.view"><i class="fa-solid fa-right-left"></i><span>Transaksi</span></a>
+        <a class="nav-item" href="#/opname" data-route="opname" data-perm="opname.write"><i class="fa-solid fa-clipboard-check"></i><span>Stock Opname</span></a>
+        <a class="nav-item" href="#/laporan" data-route="laporan" data-perm="report.view"><i class="fa-solid fa-chart-column"></i><span>Laporan</span></a>
+        <a class="nav-item" href="#/master" data-route="master" data-perm="master.view"><i class="fa-solid fa-database"></i><span>Master Data</span></a>
+        <a class="nav-item" href="#/audit" data-route="audit" data-perm="audit.view"><i class="fa-solid fa-clock-rotate-left"></i><span>Audit Trail</span></a>
+        <a class="nav-item" href="#/pengaturan" data-route="pengaturan" data-perm="settings.view"><i class="fa-solid fa-gear"></i><span>Pengaturan</span></a>
+        <a class="nav-item" href="#/users" data-route="users" data-perm="users.manage"><i class="fa-solid fa-users-gear"></i><span>User &amp; Akses</span></a>
+      </nav>
+
+      <div class="sidebar-foot">
+        <div class="foot-badge" id="sideAvatar">AI</div>
+        <div>
+          <div class="foot-name" id="sideUserName">Adi Nor Iqbal</div>
+          <div class="foot-role" id="sideUserRole">Auditor</div>
+        </div>
+      </div>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+
+    <!-- ============ MAIN ============ -->
+    <div class="main-wrap">
+      <header class="topbar">
+        <button class="icon-btn burger" id="burger" aria-label="Buka atau tutup menu" title="Buka/tutup menu"><i class="fa-solid fa-bars"></i></button>
+
+        <div class="top-left">
+          <span class="top-label">Cabang</span>
+          <select class="top-select" id="cabangSelect">
+            <option>TM Buntok</option>
+            <option>TM Baru</option>
+            <option>TM Kuala Kapuas</option>
+            <option>Semua Cabang</option>
+          </select>
+        </div>
+
+        <div class="top-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" id="globalSearch" placeholder="Cari menu, barang, atau dokumen...">
+        </div>
+
+        <div class="top-right">
+          <div class="notif-wrap">
+            <button class="icon-btn notif-btn" id="notifBtn" aria-label="Notifikasi">
+              <i class="fa-regular fa-bell"></i>
+              <span class="notif-badge" id="notifBadge">0</span>
+            </button>
+            <div class="notif-panel" id="notifPanel" hidden></div>
+          </div>
+          <div class="user-chip">
+            <div class="avatar" id="topAvatar">AI</div>
+            <div class="user-meta">
+              <div class="user-name" id="topUserName">-</div>
+              <div class="user-role" id="topUserRole">-</div>
+            </div>
+          </div>
+          <button class="icon-btn" id="pwBtn" data-action="changePw" title="Ganti Password"><i class="fa-solid fa-key"></i></button>
+          <button class="icon-btn" id="logoutBtn" data-action="logout" title="Keluar"><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+        </div>
+      </header>
+
+      <main class="view" id="view"><!-- rendered by js --></main>
+
+      <footer class="app-foot">
+        &copy; <span id="footYear"></span> TRIO MOTOR &mdash; Satu Hati, Bersama Anda &middot; TRIO Inventory Control v2.0
+      </footer>
+    </div>
+  </div>
+
+  <!-- ============ HALAMAN LOGIN (hak akses per role) ============ -->
+  <div class="login-root" id="loginRoot">
+    <div class="login-card">
+      <div class="login-brand">
+        <span class="brand-mark">
+          <svg viewBox="0 0 32 32" width="22" height="22" aria-hidden="true">
+            <path d="M4 6 L18 6 L12 14 L2 14 Z" fill="#fff"/>
+            <path d="M10 17 L30 17 L24 25 L4 25 Z" fill="#fff" opacity=".9"/>
+          </svg>
+        </span>
+        <div>
+          <div class="login-title">TRIO INVENTORY CONTROL</div>
+          <div class="login-sub">Satu Hati, Bersama Anda</div>
+        </div>
+      </div>
+      <form id="loginForm">
+        <div class="field">
+          <label>Username</label>
+          <input name="username" autocomplete="username" placeholder="Masukkan username" required>
+        </div>
+        <div class="field">
+          <label>Password</label>
+          <input name="password" type="password" autocomplete="current-password" placeholder="Masukkan password" required>
+        </div>
+        <div class="login-err" id="loginErr" hidden></div>
+        <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-arrow-right-to-bracket"></i> Masuk</button>
+        <div class="login-hint" id="loginHint"></div>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast-zone" id="toastZone" aria-live="polite"></div>
+
+  <!-- Library lokal (tanpa CDN): QR generator + jsQR decoder untuk scan langsung di Chromium/Edge/Firefox -->
+  <script src="lib/qrcode.min.js"></script>
+  <script src="lib/jsQR.min.js"></script>
+  <script src="js/app.js?v=2.5"></script>
+</body>
+</html>
